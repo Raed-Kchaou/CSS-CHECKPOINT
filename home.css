@@ -78,3 +78,22 @@ width: 80px;
 border-radius: 5px;
 }
 .bou{background-color:rgb(212, 148, 51);}
+/* img:hover {opacity: 0.5;} */
+/* .hi img {
+    
+    position: absolute;
+    /* top: -70px ;
+    right: 100 px; 
+}*/
+.hi button {
+    position: relative;
+    top: -80px;
+    left: -50%;
+    z-index: 1;
+}
+.hi{
+    display: inline-block;
+}
+.modal{
+    color: black !important;
+}

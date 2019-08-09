@@ -3,6 +3,11 @@
 
 <head>
    <link rel="stylesheet" href="home.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 
 <body>
@@ -27,41 +32,77 @@
    </div>
    <center>
       <h1 class="image">courses</h1>
-      <img src="res/1.png">
-      <img src="res/2.png">
-      <img src="res/3.png">
-      <br>
-      <img src="res/4.png">
-      <img src="res/5.png">
-      <img src="res/6.png">
-      <br>
-      <img src="res/7.png">
-      <img src="res/8.png">
-      <img src="res/9.png">
-      <h2>feedback </h2>
-      <button onclick="Bold()">B</button> <button onclick="Italic()">I</button> <button
-         onclick="Underlineu()">underline</button>
-      <select id="fs" onchange="ff()">
+      <!-- <div class="im"> -->
+      <div class="hi">
+         <img src="res/1.png">
+         <a href="#ex1" rel="modal:open"> <button>view more</button></a>
 
-         <option value="20px">20 px</option>
-         <option  value="40px">40 px</option>
-         <option  value="80px">80 px</option>
-      </select>
-      <select id="panda" onchange="hamza()">
+        
+      </div>
+      <div class="hi">
+         <img class="omg" src="res/2.png">
+         <a href="#ex1" rel="modal:open"><button>view more</button></a>
+      </div>
+         <div class="hi">
+            <img class="omg" src="res/3.png">
+            <a href="#ex1" rel="modal:open"><button >view more</button></a>
+         </div>
+         <br>
+         <div class="hi">
+            <img class="omg" src="res/4.png">
+            <a href="#ex1" rel="modal:open"><button>view more</button></a>
+         </div>
+         <div class="hi">
+            <img class="omg" src="res/5.png">
+            <a href="#ex1" rel="modal:open"> <button>view more</button> </a>
+         </div>
+         <div class="hi">
+            <img class="omg"  src="res/6.png">
+            <a href="#ex1" rel="modal:open"> <button>view more</button> </a>
+         </div>
+         <br>
 
-         <option value="Arial">
-            Arial
-         </option>
-         <option value="Geneva">
-            Arial 1
-         </option>
-         <option value="monospace">
-            Arial 2
-         </option>
-      </select>
-      <br>
-      <textarea id="text"></textarea>
+         <div class="hi">
+            <img  class="omg" src="res/7.png">
+            <a href="#ex1" rel="modal:open"><button>view more</button></a>
+         </div>
+         <div class="hi">
+            <img class="omg" src="res/8.png">
+            <a href="#ex1" rel="modal:open"><button>view more</button></a>
+         </div>
+         <div class="hi">
+            <img class="omg" src="res/9.png">
+            <a href="#ex1" rel="modal:open"><button>view more</button></a>
+         </div>
+         <!-- </div> -->
+         <h2>feedback </h2>
+         <button onclick="Bold()">B</button> <button onclick="Italic()">I</button> <button
+            onclick="Underlineu()">underline</button>
+         <select id="fs" onchange="ff()">
+
+            <option value="20px">20 px</option>
+            <option value="40px">40 px</option>
+            <option value="80px">80 px</option>
+         </select>
+         <select id="panda" onchange="hamza()">
+
+            <option value="Arial">
+               Arial
+            </option>
+            <option value="Geneva">
+               Arial 1
+            </option>
+            <option value="monospace">
+               Arial 2
+            </option>
+         </select>
+         <br>
+         <textarea id="text"></textarea>
    </center>
+   <div id="ex1" class="modal">
+         <p>Thanks for clicking. That felt good.</p>
+         <a href="#" rel="modal:close">Close</a>
+       </div>
 </body>
 
 <script src="js/main.js"></script>
